@@ -49,7 +49,7 @@
             async CONTACT_SEND(e) {
                 e.preventDefault()
 
-                let URL = "http://localhost:3000/email/send"
+                let URL = "https://backend-binary-devs.vercel.app/email/send"
 
                 if (this.$store.state.service != -1) {
                     let service = this.$store.state.services.filter(ser => ser.id == this.$store.state.service)
